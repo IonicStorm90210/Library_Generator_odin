@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../reset.css" />    
+
     <link rel="stylesheet" href="book.css" />
     <title>Document</title>
 </head>
@@ -13,25 +13,46 @@
         <header class="title">
             <h1>Library Generator</h1>
         </header>
-        <div class="input">
+        <div class="addButton">
+            <p>Add a book!</p>
+            <button type="button" id="addBtn" class="addBtn">Add</button>
+        </div>
+        <div class="bookModal hide">
+            <div class="inputBox">
+                <form id="bookForm" action="">
+                    <input type="text" id="titleValue" class="boxbtn" placeholder="Title">
+                    <input type="text" id="authorValue" class="boxbtn" placeholder="Author">
+                    <input type="text" id="numberValue" class="boxbtn" placeholder="Number of pages">
+                    <input type="text" id="booleanValue" class="boxbtn" placeholder="Have you read this book? Yes or No...">
+                    <input type="button" id="submitBtn" value="Submit">
+
+
+                </form>
+            </div>
+        </div>
+        <!--<div class="input">
             <div>
                 <form action="" method="POST">
                     <input type="text" id="boxbtn" placeholder="Title, Author, number of pages, yes or no...">
                     <input type="button" id="btn" value="Submit">
                 </form>
             </div>
-            <p class="description">
-                Please place the books you have read in order of: 
-            </p>
-            <p class="description">
-                Title, Author, number of pages, and whether or not you have read the book.
-            </p>
-        </div>
-        <div class="bookHistory">
-            <p> Here are you books: </p>
-        </div>
-        <div id="addedBooks">
+            <div class="instructions">
+                <p class="description">
+                    Please place the books you have read in order of: 
+                </p>
+                <p class="description">
+                    Title, Author, number of pages, and whether or not you have read the book.
+                </p>
+            </div>
+        </div> -->
+        <div class="database">
+            <div class="bookHistory">
+                <p> Here are your books: </p>
+            </div>
+            <div id="addedBooks">
 
+            </div>
         </div>
     </div>
 
