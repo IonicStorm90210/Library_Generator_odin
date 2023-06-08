@@ -56,26 +56,8 @@ function libraryDatabaseBuilder() {
   form.reset();
 };
 
-/*
-const subbtn = document.querySelector("#btn");
-subbtn.addEventListener("click", bookGen);
-
-
-function bookGen() {
-    let b = document.getElementById("boxbtn").value;
-    bk = b.split(',');
-
-    //array = [title, author, pages, read]
-    addBookToLibrary.apply(this, bk)
-}
-*/
-
 function addBookToLibrary(title, author, pages, boolean) {
     let bk = [title, author, pages, boolean];
-    //let title = bk[0];
-    //let author = bk[1];
-    //let pages = bk[2];
-    //let read = bk[3];
     console.log(title + ' by ' + author + pages + ' pages ' + boolean + ' they read the book.');
     let tempLibrary = [];
     for (let i = 0; i < keys.length; i++) {
